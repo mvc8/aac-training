@@ -1,4 +1,4 @@
-flask-ngrok
+flask-ngrok==0.0.25
 Flask==1.0.2
 requests==2.18.4
 dialogflow==0.4.0
