@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, render_template
+from flask_ngrok import run_with_ngrok
 import os
 import dialogflow
 import requests
@@ -6,6 +7,7 @@ import json
 import pusher
 
 app = Flask(__name__)
+run_with_ngrok(app)
 
 @app.route('/')
 def index():
